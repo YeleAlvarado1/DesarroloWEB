@@ -1,0 +1,143 @@
+
+:root {
+    --color-azul: #0A385E; 
+    --color-cian: #00BFB3; 
+    --color-blanco: #ffffff;
+    --color-fondo: #F8F8F8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: #333;
+}
+
+
+.main-header {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-area { display: flex; align-items: center; gap: 10px; }
+.logo-area img { height: 60px; }
+
+.main-nav ul { display: flex; list-style: none; gap: 20px; }
+.main-nav a { color: white; text-decoration: none; font-weight: bold; }
+
+
+.hero-banner {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.hero-image { width: 100%; }
+.hero-image img {
+    width: 100%; /* Imagen de lado a lado */
+    max-height: 500px;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    border-bottom: 5px solid var(--color-cian);
+}
+
+.hero-content {
+    padding: 40px 10%;
+    max-width: 900px;
+}
+
+.hero-content h2 { font-size: 2.5em; margin-bottom: 15px; }
+
+.btn-principal {
+    background-color: var(--color-cian);
+    color: var(--color-azul);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    border: none;
+}
+
+
+.services-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-block {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+}
+
+
+.service-block ul, .service-block ol {
+    display: inline-block;
+    text-align: left;
+    margin-top: 15px;
+}
+
+
+.pricing-section { padding: 60px 5%; text-align: center; }
+
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td { border: 1px solid #ddd; padding: 15px; text-align: left; }
+thead { background-color: var(--color-azul); color: white; }
+
+.contact-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 60px 5%;
+}
+
+.video-container, .form-container { flex: 1; min-width: 300px; }
+
+video { width: 50%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+
+form { display: flex; flex-direction: column; gap: 12px; text-align: left; }
+form input, form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+
+/* 6. FOOTER */
+.main-footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
