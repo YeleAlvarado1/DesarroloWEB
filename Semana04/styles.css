@@ -1,0 +1,137 @@
+/* =========================
+   VARIABLES DE COLOR
+========================= */
+:root {
+    --color-azul: #0A385E;
+    --color-cian: #00BFB3;
+    --color-naranja: #ff5733;
+    --color-blanco: #ffffff;
+    --color-fondo: #F8F8F8;
+}
+
+/* =========================
+   RESET BÁSICO
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* =========================
+   ESTILO GENERAL
+========================= */
+body {
+    background-color: var(--color-fondo);
+    color: #333;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-banner {
+    background: linear-gradient(to right, var(--color-azul), var(--color-cian));
+    padding: 80px 20px;
+}
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-banner p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   BOTÓN BOOTSTRAP PERSONALIZADO
+========================= */
+.btn-primary {
+    background-color: var(--color-naranja);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff784e;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* =========================
+   CARDS DE SERVICIOS
+========================= */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    transition: transform 0.3s ease;
+}
+
+/* =========================
+   TABLA TARIFAS
+========================= */
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+/* =========================
+   VIDEO
+========================= */
+video {
+    border-radius: 10px;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-control:focus {
+    border-color: var(--color-cian);
+    box-shadow: 0 0 0 0.2rem rgba(0, 191, 179, 0.25);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        background-color: #e9f5ff;
+    }
+
+    .hero-banner {
+        text-align: center;
+    }
+
+    .hero-banner h1 {
+        font-size: 2rem;
+    }
+}
