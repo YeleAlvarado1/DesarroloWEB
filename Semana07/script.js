@@ -1,4 +1,3 @@
-// Arreglo de servicios
 const productos = [
     {
         nombre: "Aires Acondicionados",
@@ -10,20 +9,19 @@ const productos = [
         nombre: "Línea Blanca",
         precio: 30,
         descripcion: "Reparación de lavadoras.",
-        imagen: "Img/Lavadora.png"
+        imagen: "./Img/Lavadora.png"
     },
     {
         nombre: "Soporte Técnico",
         precio: 35,
-        descripcion: "Diagnóstico y reparacion de neveras y atención especializada.",
-        imagen: "img/Nevera.png"
+        descripcion: "Diagnóstico y reparación de neveras y atención especializada.",
+        imagen: "./Img/Nevera.png"
     }
 ];
 
 const lista = document.getElementById("listaProductos");
 const boton = document.getElementById("btnAgregar");
 
-// Función para renderizar productos
 function renderizarProductos() {
     lista.innerHTML = "";
 
@@ -58,16 +56,14 @@ function renderizarProductos() {
     });
 }
 
-// Render inicial
 renderizarProductos();
 
-// Botón agregar (dinámico)
 boton.addEventListener("click", () => {
     productos.push({
-        nombre: "Mantenimiento Preventivo",
+        nombre: "Revisión Técnica",
         precio: 40,
-        descripcion: "Revisión completa del sistema.",
-        imagen: "img/aire.jpg"
+        descripcion: "Chequeo general del sistema.",
+        imagen: "./Img/Nevera.png"
     });
 
     renderizarProductos();
