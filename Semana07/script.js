@@ -10,7 +10,7 @@ const productos = [
         nombre: "Línea Blanca",
         precio: 30,
         descripcion: "Reparación de lavadoras.",
-        imagen: "img/Lavadora.png"
+        imagen: "Img/Lavadora.png"
     },
     {
         nombre: "Soporte Técnico",
