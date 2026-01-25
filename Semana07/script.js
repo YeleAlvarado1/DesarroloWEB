@@ -4,7 +4,7 @@ const productos = [
         nombre: "Aires Acondicionados",
         precio: 25,
         descripcion: "Instalación, limpieza y mantenimiento.",
-        imagen: "img/Mnatenimiento.png"
+        imagen: "./Img/Mnatenimiento.png"
     },
     {
         nombre: "Línea Blanca",
